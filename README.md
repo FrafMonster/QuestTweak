@@ -23,13 +23,13 @@ Once the platform tools finished downloading, place the 'adb' file (present insi
 
 Open a terminal, and enter the following command to navigate inside QuestTweak
 
-'''sh
+'''bash
 cd Desktop/QuestTweak/
 '''
 
 Once inside, verify that all files are present by typing
 
-'''sh
+'''bash
 ls
 '''
 
@@ -37,13 +37,13 @@ You should see 'adb' and 'QuestTweak'.
 
 To execute the file, type the following command for Windows:
 
-'''sh
+'''bash
 ./QuestTweak
 '''
 
 Or for Mac:
 
-'''sh
+'''bash
 mono QuestTweak
 '''
 
@@ -58,7 +58,7 @@ You are still able to modify without too much difficulty your headset's settings
 First off, navigate to wherever the 'adb' file is present on your computer; if you followed the steps above correctly you should already be there.
 Secondly, open a shell inside the Oculus Quest by typing:
 
-'''sh
+'''bash
 ./adb shell
 '''
 
@@ -66,27 +66,27 @@ Warning: be careful while manipulating commands, you may cause problems for your
 
 Here is the list of functions that allow you to modify graphics settings:
 
-'''sh
+'''bash
 setprop debug.oculus.textureWidth 1920
 '''  
 (resolution width)
 
-'''sh
+'''bash
 setprop debug.oculus.textureHeight 1920
 '''
 (resolution height)
 
-'''sh
+'''bash
 setprop debug.oculus.foveation.level 4
 '''  
 (0 - 4, blurs the edges of the screen, enhancing rendering capacity, all the while having barely any visible effect)
 
-'''sh
+'''bash
 setprop debug.oculus.gpuLevel 4
 '''
 (0 - 4, 0: barely any power consumption, barely any gpu power. 4: high battery consumption, and significant increase in gpu power)
 
-'''sh
+'''bash
 setprop debug.oculus.cpuLevel 4
 '''
 (0 - 4, does not really affect rendering capability)
