@@ -17,8 +17,9 @@ For this application to work on mac, please download the Windows Mono framework:
 
 https://www.mono-project.com/download/stable/
 
+### Launching QuestTweak
 
-Once the platform tools downloaded, place the 'adb' file (present inside platform tools) inside the QuestTweak directory.
+Once the platform tools finished downloading, place the 'adb' file (present inside platform tools) inside the QuestTweak directory.
 
 Open a terminal, and enter the following command to navigate inside QuestTweak
 
