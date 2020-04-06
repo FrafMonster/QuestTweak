@@ -6,8 +6,9 @@ It uses adb commands to run inputed tasks.
 
 ## Download and usage
 
-Download the directory 'QuestTweak', and put it on your desktop for easy access
-Download the android platform tools, available for Mac, Linux:
+Download the directory 'QuestTweak', and put it on your desktop for easy access.
+
+Download the android platform tools, available for Windows, Mac, Linux:
 
 https://developer.android.com/studio/releases/platform-tools
 
@@ -49,7 +50,9 @@ mono QuestTweak
 ```
 
 Once running, make sure your headset is connected to your computer, and you should be ready to go!
+
 For the modifications to take effect, you must start an application on the headset.
+
 To restore the Quest's or Go's default settings, just reboot the headset.
 
 ## If the application does not work DO NOT WORRY!
@@ -57,6 +60,7 @@ To restore the Quest's or Go's default settings, just reboot the headset.
 You are still able to modify without too much difficulty your headset's settings via command lines!
 
 First off, navigate to wherever the 'adb' file is present on your computer; if you followed the steps above correctly you should already be there.
+
 Secondly, open a shell inside the Oculus Quest by typing:
 
 ```sh
