@@ -74,12 +74,12 @@ Here is the list of functions that allow you to modify graphics settings:
 ```sh
 setprop debug.oculus.textureWidth 1920
 ```
-(resolution width)
+(resolution width, standard is 1280)
 
 ```sh
 setprop debug.oculus.textureHeight 1920
 ```
-(resolution height)
+(resolution height, standard is 1280)
 
 ```sh
 setprop debug.oculus.foveation.level 4
@@ -95,3 +95,53 @@ setprop debug.oculus.gpuLevel 4
 setprop debug.oculus.cpuLevel 4
 ```
 (0 - 4, does not really affect rendering capability)
+
+## Recommended settings
+
+Certain games use more gpu power than others, and so it will be difficult to effectively change the resolution without it lagging.
+
+It's a generally good idea to always set foveation level to 4, as it barely affects the VR experience, and increases performance.
+
+Just set the gpu level to 4 all the time, as well as the cpu level.
+
+### Beat saber - runs 4/4 GPU Level by default
+
+It's actually a really demanding game, you can't really augment the resolution too much without it lagging, and for any expert+ users out there, please trust me on that one, don't bump it up too much
+
+Res: ~ 1536 max
+
+Fov level: 4
+
+GPU/CPU level: 4
+
+### Pistol Whip - runs 2/4 GPU Level by default
+
+If you set the GPU level to 4, you can bump your graphics up to rift s resolution! There's slight lag, so if you want smoother gameplay set it to about 1920, but if you don't care go for 2440! (I personally do not care)
+
+Res: 1920 - 2440 Makes a HUGE difference to have these resolutions
+
+Fov level 4
+
+GPU/CPU level: 4
+
+### Mission ISS - runs 2/4 GPU Level by default
+
+Same goes here! Turn the resolution really high for a great space immersion!
+
+Res: 1920 - 2440 Makes a HUGE difference to have these resolutions
+
+Fov level 4
+
+GPU/CPU level: 4
+
+### Debugging for other games
+
+If you are interested in seeing wether or not certain games can support high resolutions, type this command in (from the same folder that contains the 'adb' file):
+
+```sh
+./adb logcat -s VrApi
+```
+
+A very big chunk of text will appear, and will update every few moments; you are basically looking at the Rendering logs of the oculus quest!
+
+To see if your game requires a lot of GPU/CPU power, just launch it after having typed that command in, and observe the change in GPU usage, it should look something like this: "GPU=2/4", with the '2' replaced by whatever number is actually being used
